@@ -1,2 +1,2 @@
-# Swift-Tutorials
+# SwiftTutorials
 Swiftを練習するレポジトリ
