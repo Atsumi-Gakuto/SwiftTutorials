@@ -32,3 +32,36 @@ let width = 94 //Int型
 let widthLabel = label + String(width) //Int型からString型への明示的な型変換を行う。
 
 print(widthLabel)
+
+
+//複数行にわたる文字列は二重引用符（"）3つで囲む。
+let apples = 1
+let oranges = 3
+let quotation = """
+	Even though there's whitespace to the left,
+	the actual lines aren't indented.
+		Except for this line.
+	Double quotes (") can appear without being escaped.
+
+	I still have \(apples + oranges) pieces of fruit.
+	"""
+
+
+//大括弧（[]）で配列や辞書を作成。インデックスやキーを用いて要素を参照。
+var fruits = ["strawberries", "limes", "tangerines"]
+fruits[1] = "grapes"
+
+var occupations = [
+	"Malcolm": "Captain",
+	"Kaylee": "Mechanic", //カンマ終わりは許される。
+]
+occupations["Jayne"] = "Public Relations"
+
+
+//要素を追加すると配列のスペースが自動的に確保される。
+fruits.append("blueberries")
+print(fruits)
+
+//空の配列・辞書を宣言
+fruits = [] //配列
+occupations = [:] //辞書
